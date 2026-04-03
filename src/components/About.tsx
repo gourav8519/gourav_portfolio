@@ -43,7 +43,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="group text-center p-6 bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40 hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/5 hover:-translate-y-1"
+                className="group text-center p-6 bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/5 hover:-translate-y-1"
               >
                 <div className={`w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
                   <stat.icon className="w-5 h-5" />
@@ -61,7 +61,7 @@ export default function About() {
 
         {/* About Content */}
         <AnimatedSection delay={0.2}>
-          <div className="max-w-3xl mx-auto bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40 p-8 md:p-10">
+          <div className="max-w-3xl mx-auto bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-8 md:p-10">
             <div className="space-y-5 text-dark-600 dark:text-dark-300 leading-relaxed">
               <p className="text-lg">
                 I&apos;m a <strong className="text-dark-900 dark:text-white">Full Stack Developer</strong> based
@@ -123,7 +123,7 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
-                  className="group p-5 bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40 hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/5 hover:-translate-y-1 text-center"
+                  className="group p-5 bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/5 hover:-translate-y-1 text-center"
                 >
                   <div className={`w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
                     <item.icon className="w-5 h-5" />

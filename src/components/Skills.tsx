@@ -54,7 +54,7 @@ export default function Skills() {
         <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6">
           {/* Frontend */}
           <AnimatedSection delay={0.1}>
-            <div className="bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40 p-5 md:p-7 h-full">
+            <div className="bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-5 md:p-7 h-full">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center">
                   <span className="text-white text-sm md:text-lg font-bold">F</span>
@@ -71,7 +71,7 @@ export default function Skills() {
 
           {/* Backend */}
           <AnimatedSection delay={0.2}>
-            <div className="bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40 p-5 md:p-7 h-full">
+            <div className="bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-5 md:p-7 h-full">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
                   <span className="text-white text-sm md:text-lg font-bold">B</span>
@@ -90,7 +90,7 @@ export default function Skills() {
         <div className="grid md:grid-cols-2 gap-4 md:gap-6">
           {/* Tools */}
           <AnimatedSection delay={0.3}>
-            <div className="bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40 p-5 md:p-7 h-full">
+            <div className="bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-5 md:p-7 h-full">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center">
                   <span className="text-white text-sm md:text-lg font-bold">T</span>
@@ -116,7 +116,7 @@ export default function Skills() {
 
           {/* Core Concepts & Highlights */}
           <AnimatedSection delay={0.35}>
-            <div className="bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40 p-5 md:p-7 h-full">
+            <div className="bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-5 md:p-7 h-full">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
                   <span className="text-white text-sm md:text-lg font-bold">C</span>

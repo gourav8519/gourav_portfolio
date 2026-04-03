@@ -48,7 +48,7 @@ export default function Experience() {
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40 p-5 md:p-7 hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/5">
+                <div className="flex-1 bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-5 md:p-7 hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/5">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-dark-900 dark:text-white">
@@ -92,7 +92,7 @@ export default function Experience() {
                 </div>
               </div>
 
-              <div className="flex-1 bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40 p-5 md:p-7 hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-300">
+              <div className="flex-1 bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-5 md:p-7 hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-300">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
                   <div>
                     <h3 className="text-xl font-bold text-dark-900 dark:text-white">
@@ -124,7 +124,7 @@ export default function Experience() {
                 </div>
               </div>
 
-              <div className="flex-1 bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40 p-5 md:p-7">
+              <div className="flex-1 bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-5 md:p-7">
                 <h3 className="text-xl font-bold text-dark-900 dark:text-white mb-4">
                   Certifications
                 </h3>

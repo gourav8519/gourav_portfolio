@@ -133,7 +133,7 @@ function CaseStudyCard({ cs, index }: { cs: typeof caseStudies[0]; index: number
 
   return (
     <AnimatedSection delay={index * 0.1}>
-      <div className="bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40 overflow-hidden hover:border-primary-500/30 transition-all duration-300">
+      <div className="bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 overflow-hidden hover:border-primary-500/30 transition-all duration-300">
         {/* Clickable Header */}
         <button
           onClick={() => setIsOpen(!isOpen)}

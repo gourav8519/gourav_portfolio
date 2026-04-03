@@ -113,3 +113,19 @@ section + section {
 .dark section + section {
   border-top: 1px solid rgba(59, 130, 246, 0.04);
 }
+
+/* Dark mode glassmorphism cards */
+.dark .bg-white {
+  background-color: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(12px);
+  border-color: rgba(51, 65, 85, 0.5);
+}
+
+.dark .bg-dark-50 {
+  background-color: rgba(30, 41, 59, 0.6);
+}
+
+/* Dark mode section backgrounds */
+.dark .bg-dark-50\/50 {
+  background-color: rgba(15, 23, 42, 0.5);
+}

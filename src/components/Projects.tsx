@@ -31,7 +31,7 @@ export default function Projects() {
         <div className="space-y-5 mb-5">
           {projects.slice(0, 3).map((project, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
-              <div className="group relative bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40 overflow-hidden hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-500 hover:shadow-2xl hover:shadow-primary-500/10 hover:-translate-y-1">
+              <div className="group relative bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 overflow-hidden hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-500 hover:shadow-2xl hover:shadow-primary-500/10 hover:-translate-y-1">
                 <div className="grid md:grid-cols-5 gap-0">
                   {/* Left — Gradient */}
                   <div
@@ -97,7 +97,7 @@ export default function Projects() {
         <div className="grid md:grid-cols-2 gap-5">
           {projects.slice(3).map((project, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
-              <div className="group bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40 overflow-hidden hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/5 hover:-translate-y-1 h-full flex flex-col">
+              <div className="group bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 overflow-hidden hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/5 hover:-translate-y-1 h-full flex flex-col">
                 {/* Gradient Header */}
                 <div className={`h-28 sm:h-32 bg-gradient-to-br ${project.color} relative overflow-hidden flex items-center justify-center`}>
                   <div className="absolute inset-0 bg-black/10" />
