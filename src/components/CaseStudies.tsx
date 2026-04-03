@@ -20,9 +20,9 @@ const caseStudies = [
     ],
     sections: {
       problem:
-        "Businesses were manually managing WhatsApp conversations — sending replies, follow-ups, and campaigns one by one. No way to automate complex multi-step workflows. Existing tools were either too expensive or lacked visual workflow building.",
+        "Businesses were manually managing WhatsApp conversations - sending replies, follow-ups, and campaigns one by one. No way to automate complex multi-step workflows. Existing tools were either too expensive or lacked visual workflow building.",
       solution:
-        "Built a full-stack WhatsApp automation platform with a visual drag-and-drop workflow builder. Users create complex automation flows with conditions, delays, webhooks, and API blocks — all without writing code.",
+        "Built a full-stack WhatsApp automation platform with a visual drag-and-drop workflow builder. Users create complex automation flows with conditions, delays, webhooks, and API blocks - all without writing code.",
       architecture: [
         "React Flow-based visual editor for drag-and-drop workflow creation",
         "Node.js backend with Express for API and workflow orchestration",
@@ -62,7 +62,7 @@ const caseStudies = [
       problem:
         "Sending bulk emails at scale (1M+/day) involves deliverability challenges, IP warming, bounce handling, and spam compliance. Most solutions are too expensive or lack automation workflows for modern marketing.",
       solution:
-        "Built a complete email marketing platform from scratch — visual automation builder, campaign engine, contact segmentation, and high-performance delivery pipeline using Redis queues and SMTP/PMTA servers.",
+        "Built a complete email marketing platform from scratch - visual automation builder, campaign engine, contact segmentation, and high-performance delivery pipeline using Redis queues and SMTP/PMTA servers.",
       architecture: [
         "React.js frontend with drag-and-drop automation builder",
         "Node.js backend for campaign scheduling and automation triggers",
@@ -81,7 +81,7 @@ const caseStudies = [
       tech: ["React.js", "Node.js", "MongoDB", "Redis", "BullMQ", "PMTA/SMTP", "Socket.io", "Webhooks"],
       learnings: [
         "Designing high-throughput queue pipelines that don't lose messages",
-        "Email deliverability science — warmup, reputation, authentication",
+        "Email deliverability science - warmup, reputation, authentication",
         "Performance optimization through caching and database indexing",
       ],
     },
@@ -121,8 +121,8 @@ const caseStudies = [
       tech: ["Next.js", "Node.js", "MongoDB", "OpenAI API", "Socket.io", "IMAP"],
       learnings: [
         "Prompt engineering dramatically affects AI response quality",
-        "AI systems need guardrails — confidence scoring and fallbacks are essential",
-        "Building for graceful degradation — when AI fails, UX shouldn't break",
+        "AI systems need guardrails - confidence scoring and fallbacks are essential",
+        "Building for graceful degradation - when AI fails, UX shouldn't break",
       ],
     },
   },
@@ -156,7 +156,7 @@ function CaseStudyCard({ cs, index }: { cs: typeof caseStudies[0]; index: number
             </div>
           </div>
 
-          {/* Summary + Metrics — always visible */}
+          {/* Summary + Metrics - always visible */}
           <div className="p-5 md:p-6">
             <p className="text-sm text-dark-500 dark:text-dark-400 mb-4">{cs.summary}</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-2">

@@ -65,17 +65,17 @@ export default function About() {
             <div className="space-y-5 text-dark-600 dark:text-dark-300 leading-relaxed">
               <p className="text-lg">
                 <strong className="text-dark-900 dark:text-white">Full Stack Developer</strong> based
-                in Bhopal — I don&apos;t just write features, I build entire products from scratch and ship them to production.
+                in Bhopal - I don&apos;t just write features, I build entire products from scratch and ship them to production.
               </p>
 
               <p>
                 Right now at <strong className="text-dark-900 dark:text-white">Pabbly</strong>, I own two major products end-to-end:{" "}
-                <strong className="text-dark-900 dark:text-white">WhatsApp ChatFlow</strong> — a visual workflow builder doing 5,000+ executions daily,
-                and <strong className="text-dark-900 dark:text-white">Email Marketing</strong> — a bulk sending system pushing 1M+ emails/day through Redis queues and PMTA servers.
+                <strong className="text-dark-900 dark:text-white">WhatsApp ChatFlow</strong> - a visual workflow builder doing 5,000+ executions daily,
+                and <strong className="text-dark-900 dark:text-white">Email Marketing</strong> - a bulk sending system pushing 1M+ emails/day through Redis queues and PMTA servers.
               </p>
 
               <p>
-                My day-to-day involves <strong className="text-dark-900 dark:text-white">React, Node.js, MongoDB, Redis, Socket.io</strong> —
+                My day-to-day involves <strong className="text-dark-900 dark:text-white">React, Node.js, MongoDB, Redis, Socket.io</strong> -
                 designing queue architectures, writing API endpoints, building drag-and-drop UIs, and debugging production issues at scale.
                 Before Pabbly, I was at <strong className="text-dark-900 dark:text-white">iifetech</strong> building dashboards and REST APIs.
               </p>

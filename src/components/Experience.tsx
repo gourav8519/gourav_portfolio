@@ -134,7 +134,7 @@ export default function Experience() {
                       <div className="w-1.5 h-1.5 rounded-full bg-primary-500 mt-2 shrink-0" />
                       <div>
                         <span className="text-sm font-semibold text-dark-900 dark:text-white">{cert.name}</span>
-                        <span className="text-sm text-dark-400"> — {cert.provider}, {cert.year}</span>
+                        <span className="text-sm text-dark-400"> - {cert.provider}, {cert.year}</span>
                       </div>
                     </div>
                   ))}

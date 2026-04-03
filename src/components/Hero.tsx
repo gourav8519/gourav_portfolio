@@ -61,7 +61,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="text-[13px] sm:text-base md:text-lg text-dark-500 dark:text-dark-400 max-w-2xl mx-auto mb-6 sm:mb-8 leading-[1.8] px-2 sm:px-0"
         >
-          I ship <strong className="text-dark-700 dark:text-dark-200">production SaaS products</strong> —{" "}
+          I ship <strong className="text-dark-700 dark:text-dark-200">production SaaS products</strong> -{" "}
           from <strong className="text-dark-700 dark:text-dark-200">WhatsApp automation platforms</strong> to{" "}
           <strong className="text-dark-700 dark:text-dark-200">high-volume email systems</strong>.{" "}
           React + Node + Redis + MongoDB. Built for scale, not just demos.
@@ -144,7 +144,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Scroll Indicator — hidden on mobile */}
+      {/* Scroll Indicator - hidden on mobile */}
       <motion.a
         href="#about"
         initial={{ opacity: 0 }}
