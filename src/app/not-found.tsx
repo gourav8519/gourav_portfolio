@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FiHome, FiArrowLeft } from "react-icons/fi";
+import { Home, ArrowLeft } from "lucide-react";
 
 export default function NotFound() {
   return (
@@ -56,14 +56,14 @@ export default function NotFound() {
             href="/"
             className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/25 hover:-translate-y-0.5 active:scale-95 text-sm"
           >
-            <FiHome className="w-4 h-4" />
+            <Home className="w-4 h-4" />
             Go Home
           </Link>
           <button
             onClick={() => window.history.back()}
             className="inline-flex items-center justify-center gap-2 bg-white dark:bg-dark-800 border-2 border-dark-200 dark:border-dark-700 text-dark-700 dark:text-dark-300 px-6 py-3 rounded-xl font-semibold hover:border-primary-500 hover:text-primary-600 dark:hover:border-primary-500 dark:hover:text-primary-400 transition-all duration-300 hover:-translate-y-0.5 active:scale-95 text-sm"
           >
-            <FiArrowLeft className="w-4 h-4" />
+            <ArrowLeft className="w-4 h-4" />
             Go Back
           </button>
         </motion.div>

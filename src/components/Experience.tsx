@@ -2,7 +2,7 @@
 
 import { experiences, education, certifications } from "@/data/portfolio";
 import AnimatedSection from "./AnimatedSection";
-import { FiBriefcase, FiBookOpen, FiAward } from "react-icons/fi";
+import { Briefcase, BookOpen, Award } from "lucide-react";
 
 export default function Experience() {
   return (
@@ -43,7 +43,7 @@ export default function Experience() {
                         : "bg-white dark:bg-dark-800 text-dark-500 dark:text-dark-400 border border-dark-200 dark:border-dark-700"
                     }`}
                   >
-                    <FiBriefcase className="w-5 h-5" />
+                    <Briefcase className="w-5 h-5" />
                   </div>
                 </div>
 
@@ -88,7 +88,7 @@ export default function Experience() {
             <div className="relative flex gap-5 md:gap-7">
               <div className="relative z-10 shrink-0">
                 <div className="w-14 h-14 rounded-2xl bg-white dark:bg-dark-800 border border-dark-200 dark:border-dark-700 flex items-center justify-center text-dark-500 dark:text-dark-400">
-                  <FiBookOpen className="w-5 h-5" />
+                  <BookOpen className="w-5 h-5" />
                 </div>
               </div>
 
@@ -120,7 +120,7 @@ export default function Experience() {
             <div className="relative flex gap-5 md:gap-7 mt-8">
               <div className="relative z-10 shrink-0">
                 <div className="w-14 h-14 rounded-2xl bg-white dark:bg-dark-800 border border-dark-200 dark:border-dark-700 flex items-center justify-center text-dark-500 dark:text-dark-400">
-                  <FiAward className="w-5 h-5" />
+                  <Award className="w-5 h-5" />
                 </div>
               </div>
 

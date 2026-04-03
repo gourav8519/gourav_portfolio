@@ -2,7 +2,8 @@
 
 import { personalInfo } from "@/data/portfolio";
 import AnimatedSection from "./AnimatedSection";
-import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin, FiSend, FiArrowUpRight, FiCheckCircle } from "react-icons/fi";
+import { Mail, Phone, MapPin, Send, ArrowUpRight, CheckCircle } from "lucide-react";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { useState } from "react";
 
 export default function Contact() {
@@ -83,7 +84,7 @@ export default function Contact() {
               className="group flex items-center gap-4 p-5 bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40 hover:border-primary-500/50 dark:hover:border-primary-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/5 hover:-translate-y-0.5"
             >
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300">
-                <FiMail className="w-5 h-5" />
+                <Mail className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
                 <div className="text-xs text-dark-400 font-medium uppercase tracking-wider">Email</div>
@@ -91,7 +92,7 @@ export default function Contact() {
                   {personalInfo.email}
                 </div>
               </div>
-              <FiArrowUpRight className="w-4 h-4 text-dark-300 dark:text-dark-600 group-hover:text-primary-500 shrink-0 transition-colors" />
+              <ArrowUpRight className="w-4 h-4 text-dark-300 dark:text-dark-600 group-hover:text-primary-500 shrink-0 transition-colors" />
             </a>
 
             <a
@@ -99,7 +100,7 @@ export default function Contact() {
               className="group flex items-center gap-4 p-5 bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40 hover:border-primary-500/50 dark:hover:border-primary-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/5 hover:-translate-y-0.5"
             >
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300">
-                <FiPhone className="w-5 h-5" />
+                <Phone className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
                 <div className="text-xs text-dark-400 font-medium uppercase tracking-wider">Phone</div>
@@ -107,12 +108,12 @@ export default function Contact() {
                   {personalInfo.phone}
                 </div>
               </div>
-              <FiArrowUpRight className="w-4 h-4 text-dark-300 dark:text-dark-600 group-hover:text-green-500 shrink-0 transition-colors" />
+              <ArrowUpRight className="w-4 h-4 text-dark-300 dark:text-dark-600 group-hover:text-green-500 shrink-0 transition-colors" />
             </a>
 
             <div className="flex items-center gap-4 p-5 bg-white dark:bg-dark-800/60 rounded-2xl border border-dark-200/60 dark:border-dark-700/40">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center text-white shrink-0">
-                <FiMapPin className="w-5 h-5" />
+                <MapPin className="w-5 h-5" />
               </div>
               <div>
                 <div className="text-xs text-dark-400 font-medium uppercase tracking-wider">Location</div>
@@ -149,19 +150,19 @@ export default function Contact() {
               <h4 className="font-bold text-lg mb-3">Why work with me?</h4>
               <ul className="space-y-2.5 text-sm text-white/90">
                 <li className="flex gap-2.5">
-                  <FiCheckCircle className="w-4 h-4 mt-0.5 shrink-0" />
+                  <CheckCircle className="w-4 h-4 mt-0.5 shrink-0" />
                   <span>2+ years building production-grade SaaS products</span>
                 </li>
                 <li className="flex gap-2.5">
-                  <FiCheckCircle className="w-4 h-4 mt-0.5 shrink-0" />
+                  <CheckCircle className="w-4 h-4 mt-0.5 shrink-0" />
                   <span>Systems handling 10K+ users & 1M+ daily operations</span>
                 </li>
                 <li className="flex gap-2.5">
-                  <FiCheckCircle className="w-4 h-4 mt-0.5 shrink-0" />
+                  <CheckCircle className="w-4 h-4 mt-0.5 shrink-0" />
                   <span>Full stack: pixel-perfect UI to scalable backend</span>
                 </li>
                 <li className="flex gap-2.5">
-                  <FiCheckCircle className="w-4 h-4 mt-0.5 shrink-0" />
+                  <CheckCircle className="w-4 h-4 mt-0.5 shrink-0" />
                   <span>Strong in system design & real-time architectures</span>
                 </li>
               </ul>
@@ -231,12 +232,12 @@ export default function Contact() {
                   <>Sending...</>
                 ) : status === "sent" ? (
                   <>
-                    <FiCheckCircle className="w-4 h-4" />
+                    <CheckCircle className="w-4 h-4" />
                     Message Sent!
                   </>
                 ) : (
                   <>
-                    <FiSend className="w-4 h-4" />
+                    <Send className="w-4 h-4" />
                     Send Message
                   </>
                 )}

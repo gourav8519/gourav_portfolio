@@ -1,7 +1,8 @@
 "use client";
 
 import { personalInfo, navLinks } from "@/data/portfolio";
-import { FiGithub, FiLinkedin, FiMail, FiArrowUp } from "react-icons/fi";
+import { Mail, ArrowUp } from "lucide-react";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
           href="#home"
           className="w-10 h-10 rounded-full bg-primary-600 text-white flex items-center justify-center shadow-lg shadow-primary-500/25 hover:bg-primary-700 transition-colors hover:scale-110 active:scale-95"
         >
-          <FiArrowUp className="w-4 h-4" />
+          <ArrowUp className="w-4 h-4" />
         </a>
       </div>
 
@@ -49,7 +50,7 @@ export default function Footer() {
             {[
               { icon: FiGithub, href: personalInfo.github },
               { icon: FiLinkedin, href: personalInfo.linkedin },
-              { icon: FiMail, href: `mailto:${personalInfo.email}` },
+              { icon: Mail, href: `mailto:${personalInfo.email}` },
             ].map((s, i) => (
               <a
                 key={i}

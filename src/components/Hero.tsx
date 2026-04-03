@@ -2,8 +2,8 @@
 
 import { personalInfo } from "@/data/portfolio";
 import { motion } from "framer-motion";
-import { FiGithub, FiLinkedin, FiDownload } from "react-icons/fi";
-import { HiOutlineMail } from "react-icons/hi";
+import { Download, Mail } from "lucide-react";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 const techStack = ["React.js", "Next.js", "TypeScript", "Node.js", "MongoDB", "Redis", "SQL"];
 
@@ -98,7 +98,7 @@ export default function Hero() {
             href="#contact"
             className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white px-6 sm:px-8 py-2.5 sm:py-4 rounded-xl sm:rounded-2xl font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/25 hover:-translate-y-0.5 active:scale-95 text-sm"
           >
-            <HiOutlineMail className="w-4 h-4 sm:w-5 sm:h-5" />
+            <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
             Get In Touch
           </a>
           <div className="flex gap-2">
@@ -113,7 +113,7 @@ export default function Hero() {
               download="Gourav_Sahu_Resume.pdf"
               className="flex-1 inline-flex items-center justify-center gap-2 bg-white dark:bg-dark-800 border-2 border-dark-200 dark:border-dark-700 text-dark-700 dark:text-dark-300 px-4 sm:px-8 py-2.5 sm:py-4 rounded-xl sm:rounded-2xl font-semibold hover:border-primary-500 hover:text-primary-600 dark:hover:border-primary-500 dark:hover:text-primary-400 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg active:scale-95 text-xs sm:text-sm"
             >
-              <FiDownload className="w-3.5 h-3.5" />
+              <Download className="w-3.5 h-3.5" />
               Resume
             </a>
           </div>
@@ -129,7 +129,7 @@ export default function Hero() {
           {[
             { icon: FiGithub, href: personalInfo.github, label: "GitHub", hoverBg: "hover:bg-dark-900 hover:text-white dark:hover:bg-white dark:hover:text-dark-900" },
             { icon: FiLinkedin, href: personalInfo.linkedin, label: "LinkedIn", hoverBg: "hover:bg-[#0077B5] hover:text-white dark:hover:bg-[#0077B5] dark:hover:text-white" },
-            { icon: HiOutlineMail, href: `mailto:${personalInfo.email}`, label: "Email", hoverBg: "hover:bg-primary-600 hover:text-white dark:hover:bg-primary-600 dark:hover:text-white" },
+            { icon: Mail, href: `mailto:${personalInfo.email}`, label: "Email", hoverBg: "hover:bg-primary-600 hover:text-white dark:hover:bg-primary-600 dark:hover:text-white" },
           ].map((social) => (
             <a
               key={social.label}

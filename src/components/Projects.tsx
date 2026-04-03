@@ -2,7 +2,7 @@
 
 import { projects } from "@/data/portfolio";
 import AnimatedSection from "./AnimatedSection";
-import { FiExternalLink } from "react-icons/fi";
+import { ExternalLink } from "lucide-react";
 
 export default function Projects() {
   return (
@@ -54,7 +54,7 @@ export default function Projects() {
                           rel="noopener noreferrer"
                           className="inline-flex items-center gap-1.5 mt-4 px-4 py-1.5 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full text-white text-xs font-semibold transition-colors"
                         >
-                          <FiExternalLink className="w-3 h-3" />
+                          <ExternalLink className="w-3 h-3" />
                           Live Demo
                         </a>
                       )}
@@ -140,7 +140,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className="mt-4 inline-flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-dark-900 dark:bg-white text-white dark:text-dark-900 text-sm font-semibold hover:opacity-90 transition-opacity"
                     >
-                      <FiExternalLink className="w-3.5 h-3.5" />
+                      <ExternalLink className="w-3.5 h-3.5" />
                       View Live
                     </a>
                   )}

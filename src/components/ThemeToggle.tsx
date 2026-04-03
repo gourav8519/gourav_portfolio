@@ -2,7 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { FiSun, FiMoon } from "react-icons/fi";
+import { Sun, Moon } from "lucide-react";
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
@@ -21,9 +21,9 @@ export default function ThemeToggle() {
       aria-label="Toggle theme"
     >
       {theme === "dark" ? (
-        <FiSun className="w-5 h-5 text-yellow-400" />
+        <Sun className="w-5 h-5 text-yellow-400" />
       ) : (
-        <FiMoon className="w-5 h-5 text-dark-700" />
+        <Moon className="w-5 h-5 text-dark-700" />
       )}
     </button>
   );

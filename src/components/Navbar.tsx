@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { navLinks, personalInfo } from "@/data/portfolio";
 import ThemeToggle from "./ThemeToggle";
-import { FiMenu, FiX } from "react-icons/fi";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -11,20 +11,26 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-
-      const sections = navLinks.map((link) => link.href.replace("#", ""));
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const el = document.getElementById(sections[i]);
-        if (el && window.scrollY >= el.offsetTop - 100) {
-          setActiveSection(sections[i]);
-          break;
-        }
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 50);
+          const sections = navLinks.map((link) => link.href.replace("#", ""));
+          for (let i = sections.length - 1; i >= 0; i--) {
+            const el = document.getElementById(sections[i]);
+            if (el && window.scrollY >= el.offsetTop - 100) {
+              setActiveSection(sections[i]);
+              break;
+            }
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -73,7 +79,7 @@ export default function Navbar() {
               onClick={() => setIsMobileOpen(!isMobileOpen)}
               className="w-10 h-10 rounded-full bg-dark-100 dark:bg-dark-800 flex items-center justify-center"
             >
-              {isMobileOpen ? <FiX className="w-5 h-5" /> : <FiMenu className="w-5 h-5" />}
+              {isMobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import AnimatedSection from "./AnimatedSection";
-import { FiTarget, FiTool, FiLayers, FiZap, FiTrendingUp, FiBookOpen, FiChevronDown } from "react-icons/fi";
+import { Target, Wrench, Layers, Zap, TrendingUp, BookOpen, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -151,7 +151,7 @@ function CaseStudyCard({ cs, index }: { cs: typeof caseStudies[0]; index: number
                 transition={{ duration: 0.3 }}
                 className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0 ml-4"
               >
-                <FiChevronDown className="w-5 h-5 text-white" />
+                <ChevronDown className="w-5 h-5 text-white" />
               </motion.div>
             </div>
           </div>
@@ -185,14 +185,14 @@ function CaseStudyCard({ cs, index }: { cs: typeof caseStudies[0]; index: number
                 <div className="grid md:grid-cols-2 gap-5">
                   <div>
                     <div className="flex items-center gap-2 mb-2">
-                      <FiTarget className="w-4 h-4 text-red-500" />
+                      <Target className="w-4 h-4 text-red-500" />
                       <h4 className="font-bold text-sm text-dark-900 dark:text-white">The Problem</h4>
                     </div>
                     <p className="text-sm text-dark-500 dark:text-dark-400">{cs.sections.problem}</p>
                   </div>
                   <div>
                     <div className="flex items-center gap-2 mb-2">
-                      <FiTool className="w-4 h-4 text-green-500" />
+                      <Wrench className="w-4 h-4 text-green-500" />
                       <h4 className="font-bold text-sm text-dark-900 dark:text-white">My Solution</h4>
                     </div>
                     <p className="text-sm text-dark-500 dark:text-dark-400">{cs.sections.solution}</p>
@@ -202,7 +202,7 @@ function CaseStudyCard({ cs, index }: { cs: typeof caseStudies[0]; index: number
                 {/* Architecture */}
                 <div>
                   <div className="flex items-center gap-2 mb-2">
-                    <FiLayers className="w-4 h-4 text-purple-500" />
+                    <Layers className="w-4 h-4 text-purple-500" />
                     <h4 className="font-bold text-sm text-dark-900 dark:text-white">Architecture</h4>
                   </div>
                   <div className="grid md:grid-cols-2 gap-1.5">
@@ -218,7 +218,7 @@ function CaseStudyCard({ cs, index }: { cs: typeof caseStudies[0]; index: number
                 {/* Challenges */}
                 <div>
                   <div className="flex items-center gap-2 mb-2">
-                    <FiZap className="w-4 h-4 text-orange-500" />
+                    <Zap className="w-4 h-4 text-orange-500" />
                     <h4 className="font-bold text-sm text-dark-900 dark:text-white">Challenges & Solutions</h4>
                   </div>
                   <div className="space-y-2">
@@ -238,7 +238,7 @@ function CaseStudyCard({ cs, index }: { cs: typeof caseStudies[0]; index: number
                 {/* Impact */}
                 <div>
                   <div className="flex items-center gap-2 mb-2">
-                    <FiTrendingUp className="w-4 h-4 text-green-500" />
+                    <TrendingUp className="w-4 h-4 text-green-500" />
                     <h4 className="font-bold text-sm text-dark-900 dark:text-white">Impact</h4>
                   </div>
                   <p className="text-sm text-dark-600 dark:text-dark-300">{cs.sections.impact}</p>
@@ -248,7 +248,7 @@ function CaseStudyCard({ cs, index }: { cs: typeof caseStudies[0]; index: number
                 <div className="grid md:grid-cols-2 gap-5">
                   <div>
                     <div className="flex items-center gap-2 mb-2">
-                      <FiBookOpen className="w-4 h-4 text-blue-500" />
+                      <BookOpen className="w-4 h-4 text-blue-500" />
                       <h4 className="font-bold text-sm text-dark-900 dark:text-white">Key Learnings</h4>
                     </div>
                     <ul className="space-y-1.5">

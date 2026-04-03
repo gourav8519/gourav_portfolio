@@ -2,14 +2,14 @@
 
 import AnimatedSection from "./AnimatedSection";
 import { personalInfo } from "@/data/portfolio";
-import { FiBriefcase, FiCode, FiZap, FiUsers, FiLayout, FiServer, FiCpu, FiDatabase } from "react-icons/fi";
+import { Briefcase, Code, Zap, Users, Layout, Server, Cpu, Database } from "lucide-react";
 import { motion } from "framer-motion";
 
 const stats = [
-  { label: "Years Experience", value: "2+", icon: FiBriefcase, color: "from-primary-500 to-primary-600" },
-  { label: "Projects Shipped", value: "10+", icon: FiCode, color: "from-purple-500 to-violet-600" },
-  { label: "Users Impacted", value: "10K+", icon: FiUsers, color: "from-green-500 to-emerald-600" },
-  { label: "Emails/Day", value: "1M+", icon: FiZap, color: "from-orange-500 to-red-500" },
+  { label: "Years Experience", value: "2+", icon: Briefcase, color: "from-primary-500 to-primary-600" },
+  { label: "Projects Shipped", value: "10+", icon: Code, color: "from-purple-500 to-violet-600" },
+  { label: "Users Impacted", value: "10K+", icon: Users, color: "from-green-500 to-emerald-600" },
+  { label: "Emails/Day", value: "1M+", icon: Zap, color: "from-orange-500 to-red-500" },
 ];
 
 export default function About() {
@@ -112,10 +112,10 @@ export default function About() {
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { icon: FiLayout, title: "Frontend", desc: "React, Next.js, TypeScript — responsive, animated, pixel-perfect UIs", color: "from-primary-500 to-blue-600" },
-                { icon: FiServer, title: "Backend", desc: "Node.js, Express, Nest.js — scalable APIs, event-driven systems", color: "from-green-500 to-emerald-600" },
-                { icon: FiDatabase, title: "Database", desc: "MongoDB, MySQL, Redis — schema design, caching, optimization", color: "from-purple-500 to-violet-600" },
-                { icon: FiCpu, title: "System Design", desc: "Queues, workers, real-time pipelines, microservices architecture", color: "from-orange-500 to-red-500" },
+                { icon: Layout, title: "Frontend", desc: "React, Next.js, TypeScript — responsive, animated, pixel-perfect UIs", color: "from-primary-500 to-blue-600" },
+                { icon: Server, title: "Backend", desc: "Node.js, Express, Nest.js — scalable APIs, event-driven systems", color: "from-green-500 to-emerald-600" },
+                { icon: Database, title: "Database", desc: "MongoDB, MySQL, Redis — schema design, caching, optimization", color: "from-purple-500 to-violet-600" },
+                { icon: Cpu, title: "System Design", desc: "Queues, workers, real-time pipelines, microservices architecture", color: "from-orange-500 to-red-500" },
               ].map((item, i) => (
                 <motion.div
                   key={i}
