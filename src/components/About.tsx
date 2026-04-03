@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const stats = [
   { label: "Years Experience", value: "2+", icon: Briefcase, color: "from-primary-500 to-primary-600" },
   { label: "Projects Shipped", value: "7+", icon: Code, color: "from-purple-500 to-violet-600" },
-  { label: "Users Impacted", value: "50K+", icon: Users, color: "from-green-500 to-emerald-600" },
+  { label: "Users Served", value: "50K+", icon: Users, color: "from-green-500 to-emerald-600" },
   { label: "Emails/Day", value: "1M+", icon: Zap, color: "from-orange-500 to-red-500" },
 ];
 

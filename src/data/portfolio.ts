@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "Full Stack Developer (MERN Stack)",
   tagline: "Building Scalable & High-Performance Web Applications",
   description:
-    "2+ years into building SaaS products that actually handle scale — WhatsApp automation doing 5K+ workflows/day, email systems pushing 1M+ emails/day. I work across the full stack with React, Next.js, Node.js, and MongoDB. Not just writing code — designing systems that don't break under pressure.",
+    "2+ years into building SaaS products that actually handle scale — WhatsApp automation doing 1L+ workflows/day, email systems pushing 1M+ emails/day. I work across the full stack with React, Next.js, Node.js, and MongoDB. Not just writing code — designing systems that don't break under pressure.",
   email: "s001gourav@gmail.com",
   phone: "+91 8519006622",
   location: "Bhopal, India",
@@ -14,24 +14,24 @@ export const personalInfo = {
 
 export const skills = {
   frontend: [
-    { name: "React.js", level: 95 },
-    { name: "Next.js", level: 90 },
-    { name: "TypeScript", level: 85 },
-    { name: "JavaScript (ES6+)", level: 95 },
-    { name: "Tailwind CSS", level: 92 },
-    { name: "Redux Toolkit", level: 88 },
-    { name: "React Flow", level: 85 },
-    { name: "HTML5 / CSS3", level: 95 },
+    "React.js",
+    "Next.js",
+    "TypeScript",
+    "JavaScript (ES6+)",
+    "Tailwind CSS",
+    "Redux Toolkit",
+    "React Flow",
+    "HTML5 / CSS3",
   ],
   backend: [
-    { name: "Node.js", level: 90 },
-    { name: "Express.js", level: 88 },
-    { name: "Nest.js", level: 78 },
-    { name: "MongoDB", level: 88 },
-    { name: "Redis", level: 82 },
-    { name: "Socket.io", level: 85 },
-    { name: "REST APIs", level: 92 },
-    { name: "MySQL", level: 78 },
+    "Node.js",
+    "Express.js",
+    "Nest.js",
+    "MongoDB",
+    "Redis",
+    "Socket.io",
+    "REST APIs",
+    "MySQL",
   ],
   tools: [
     "Git & GitHub",
@@ -75,10 +75,10 @@ export const experiences = [
     period: "May 2025 – Present",
     current: true,
     highlights: [
-      "Built a WhatsApp automation platform using React Flow, handling 5,000+ daily workflow executions with conditions, delays, and webhooks",
+      "Built a WhatsApp automation platform using React Flow with 20+ automation node types, handling 1L+ daily workflow executions",
       "Designed event-driven architecture using Redis queues and worker processes, improving scalability by 40%",
       "Integrated WhatsApp APIs with real-time tracking via Socket.io, reducing manual monitoring by 60%",
-      "Developed scalable email automation for 10,000+ users with bulk delivery (1M+ emails/day) using Redis, SMTP & PMTA",
+      "Developed scalable email automation for 50K+ users with bulk delivery (1M+ emails/day) using Redis, SMTP & PMTA",
       "Achieved 25-30% API performance improvement through caching and query optimization",
     ],
   },
@@ -98,24 +98,10 @@ export const experiences = [
 
 export const projects = [
   {
-    title: "Pabbly ChatFlow",
-    subtitle: "WhatsApp Automation Platform",
-    description:
-      "Users drag and drop nodes to create WhatsApp automation flows — conditions, delays, webhooks, API calls. I built both the React Flow frontend and the Redis-powered backend engine. Running 5,000+ workflow executions daily in production.",
-    tech: ["React.js", "React Flow", "Node.js", "Redis", "Socket.io", "MongoDB"],
-    highlights: [
-      "Visual workflow builder with 15+ custom node types",
-      "Event-driven architecture with Redis queues",
-      "Real-time execution logs and message tracking",
-    ],
-    color: "from-green-400 to-emerald-600",
-    liveLink: "",
-  },
-  {
     title: "Pabbly Email Marketing",
     subtitle: "Bulk Email & Automation System",
     description:
-      "Built this from zero — campaign builder, automation workflows, contact segmentation, analytics dashboard. The backend pushes 1M+ emails/day through Redis queues and PMTA/SMTP servers. Serving 10,000+ active users.",
+      "Built this from zero — campaign builder, automation workflows, contact segmentation, analytics dashboard. The backend pushes 1M+ emails/day through Redis queues and PMTA/SMTP servers. Serving 50K+ active users.",
     tech: ["React.js", "Node.js", "Redis", "SMTP/PMTA", "MongoDB", "Socket.io"],
     highlights: [
       "Email automation builder with drag-and-drop sequencing",
@@ -123,6 +109,20 @@ export const projects = [
       "Analytics dashboard for opens, clicks, bounces",
     ],
     color: "from-blue-400 to-indigo-600",
+    liveLink: "",
+  },
+  {
+    title: "Pabbly ChatFlow",
+    subtitle: "WhatsApp Automation Platform",
+    description:
+      "Users drag and drop nodes to create WhatsApp automation flows — conditions, delays, webhooks, API calls. I built both the React Flow frontend and the Redis-powered backend engine. Running 1L+ workflow executions daily with 20+ node types.",
+    tech: ["React.js", "React Flow", "Node.js", "Redis", "Socket.io", "MongoDB"],
+    highlights: [
+      "Visual workflow builder with 20+ automation node types",
+      "Event-driven architecture with Redis queues",
+      "Real-time execution logs and message tracking",
+    ],
+    color: "from-green-400 to-emerald-600",
     liveLink: "",
   },
   {

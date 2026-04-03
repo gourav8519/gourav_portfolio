@@ -11,12 +11,12 @@ const caseStudies = [
     title: "Pabbly ChatFlow",
     subtitle: "WhatsApp Automation Platform",
     color: "from-green-500 to-emerald-600",
-    summary: "Visual workflow builder handling 5,000+ daily executions with event-driven architecture",
+    summary: "Visual workflow builder handling 1L+ daily executions with 20+ automation node types",
     metrics: [
-      { label: "Daily Executions", value: "5,000+" },
+      { label: "Daily Executions", value: "1L+" },
       { label: "Scalability Boost", value: "40%" },
-      { label: "Monitoring Reduced", value: "60%" },
-      { label: "Node Types", value: "15+" },
+      { label: "Users", value: "50K+" },
+      { label: "Node Types", value: "20+" },
     ],
     sections: {
       problem:
@@ -54,7 +54,7 @@ const caseStudies = [
     summary: "Complete email platform for 10,000+ users processing 1M+ emails daily",
     metrics: [
       { label: "Emails/Day", value: "1M+" },
-      { label: "Active Users", value: "10,000+" },
+      { label: "Active Users", value: "50K+" },
       { label: "API Boost", value: "25-30%" },
       { label: "Architecture", value: "Multi-worker" },
     ],
