@@ -22,7 +22,7 @@ export default function Projects() {
               </span>
             </h2>
             <p className="text-dark-500 dark:text-dark-400 max-w-xl mx-auto text-base md:text-lg">
-              Products I&apos;ve built from scratch, used by thousands
+              Stuff I&apos;ve actually built and shipped to production
             </p>
           </div>
         </AnimatedSection>

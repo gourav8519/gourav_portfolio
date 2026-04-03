@@ -20,7 +20,7 @@ export default function Experience() {
               </span>
             </h2>
             <p className="text-dark-500 dark:text-dark-400 max-w-xl mx-auto text-lg">
-              My professional journey building products at scale
+              Companies where I&apos;ve shipped production code
             </p>
           </div>
         </AnimatedSection>

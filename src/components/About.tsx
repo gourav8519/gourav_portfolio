@@ -25,9 +25,9 @@ export default function About() {
               About Me
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
-              Passionate About Building{" "}
+              Who I Am{" "}
               <span className="bg-gradient-to-r from-primary-500 to-primary-700 dark:from-primary-400 dark:to-primary-600 bg-clip-text text-transparent">
-                At Scale
+                & What I Do
               </span>
             </h2>
           </div>
@@ -64,23 +64,20 @@ export default function About() {
           <div className="max-w-3xl mx-auto bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-8 md:p-10">
             <div className="space-y-5 text-dark-600 dark:text-dark-300 leading-relaxed">
               <p className="text-lg">
-                I&apos;m a <strong className="text-dark-900 dark:text-white">Full Stack Developer</strong> based
-                in Bhopal, India, specializing in building products that solve real-world problems at scale.
+                <strong className="text-dark-900 dark:text-white">Full Stack Developer</strong> based
+                in Bhopal — I don&apos;t just write features, I build entire products from scratch and ship them to production.
               </p>
 
               <p>
-                Currently at <strong className="text-dark-900 dark:text-white">Pabbly</strong>, I architect and build
-                marketing automation products — from <strong className="text-dark-900 dark:text-white">WhatsApp ChatFlow
-                automation</strong> with visual drag-and-drop workflow builders to{" "}
-                <strong className="text-dark-900 dark:text-white">high-volume email systems</strong> processing
-                1M+ emails daily using Redis queues, SMTP/PMTA pipelines, and Socket.io for real-time tracking.
+                Right now at <strong className="text-dark-900 dark:text-white">Pabbly</strong>, I own two major products end-to-end:{" "}
+                <strong className="text-dark-900 dark:text-white">WhatsApp ChatFlow</strong> — a visual workflow builder doing 5,000+ executions daily,
+                and <strong className="text-dark-900 dark:text-white">Email Marketing</strong> — a bulk sending system pushing 1M+ emails/day through Redis queues and PMTA servers.
               </p>
 
               <p>
-                I thrive in <strong className="text-dark-900 dark:text-white">zero-to-one product development</strong> — taking
-                an idea from concept to a fully functional system used by thousands. My toolkit includes{" "}
-                <strong className="text-dark-900 dark:text-white">React.js, Next.js, Node.js, TypeScript, Redis, MongoDB</strong>,
-                and I love working with event-driven architectures and real-time systems.
+                My day-to-day involves <strong className="text-dark-900 dark:text-white">React, Node.js, MongoDB, Redis, Socket.io</strong> —
+                designing queue architectures, writing API endpoints, building drag-and-drop UIs, and debugging production issues at scale.
+                Before Pabbly, I was at <strong className="text-dark-900 dark:text-white">iifetech</strong> building dashboards and REST APIs.
               </p>
             </div>
 
@@ -112,10 +109,10 @@ export default function About() {
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { icon: Layout, title: "Frontend", desc: "React, Next.js, TypeScript — responsive, animated, pixel-perfect UIs", color: "from-primary-500 to-blue-600" },
-                { icon: Server, title: "Backend", desc: "Node.js, Express, Nest.js — scalable APIs, event-driven systems", color: "from-green-500 to-emerald-600" },
-                { icon: Database, title: "Database", desc: "MongoDB, MySQL, Redis — schema design, caching, optimization", color: "from-purple-500 to-violet-600" },
-                { icon: Cpu, title: "System Design", desc: "Queues, workers, real-time pipelines, microservices architecture", color: "from-orange-500 to-red-500" },
+                { icon: Layout, title: "Frontend", desc: "React + Next.js + TypeScript. Workflow builders, dashboards, responsive UIs.", color: "from-primary-500 to-blue-600" },
+                { icon: Server, title: "Backend", desc: "Node.js + Express + Nest.js. REST APIs, queue workers, webhooks.", color: "from-green-500 to-emerald-600" },
+                { icon: Database, title: "Database", desc: "MongoDB + Redis + MySQL. Indexing, caching, aggregation pipelines.", color: "from-purple-500 to-violet-600" },
+                { icon: Cpu, title: "System Design", desc: "Redis queues, worker processes, Socket.io, event-driven patterns.", color: "from-orange-500 to-red-500" },
               ].map((item, i) => (
                 <motion.div
                   key={i}

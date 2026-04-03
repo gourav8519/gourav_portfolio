@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "Full Stack Developer (MERN Stack)",
   tagline: "Building Scalable & High-Performance Web Applications",
   description:
-    "MERN Stack Developer with 2+ years of experience building scalable SaaS applications, automation systems, and real-time platforms. I specialize in React.js, Next.js, Node.js, and MongoDB — from crafting pixel-perfect UIs to designing high-performance backend architectures handling millions of operations daily.",
+    "2+ years into building SaaS products that actually handle scale — WhatsApp automation doing 5K+ workflows/day, email systems pushing 1M+ emails/day. I work across the full stack with React, Next.js, Node.js, and MongoDB. Not just writing code — designing systems that don't break under pressure.",
   email: "s001gourav@gmail.com",
   phone: "+91 8519006622",
   location: "Bhopal, India",
@@ -101,7 +101,7 @@ export const projects = [
     title: "Pabbly ChatFlow",
     subtitle: "WhatsApp Automation Platform",
     description:
-      "Built a real-time WhatsApp automation platform with a visual drag-and-drop workflow builder. The system handles 5,000+ daily workflow executions with support for conditions, delays, webhooks, and API integrations.",
+      "Users drag and drop nodes to create WhatsApp automation flows — conditions, delays, webhooks, API calls. I built both the React Flow frontend and the Redis-powered backend engine. Running 5,000+ workflow executions daily in production.",
     tech: ["React.js", "React Flow", "Node.js", "Redis", "Socket.io", "MongoDB"],
     highlights: [
       "Visual workflow builder with 15+ custom node types",
@@ -115,7 +115,7 @@ export const projects = [
     title: "Pabbly Email Marketing",
     subtitle: "Bulk Email & Automation System",
     description:
-      "Zero-to-one development of a complete email automation platform supporting 10,000+ users. Built the entire email campaign builder, automation workflows, and high-volume delivery pipeline processing 1M+ emails daily.",
+      "Built this from zero — campaign builder, automation workflows, contact segmentation, analytics dashboard. The backend pushes 1M+ emails/day through Redis queues and PMTA/SMTP servers. Serving 10,000+ active users.",
     tech: ["React.js", "Node.js", "Redis", "SMTP/PMTA", "MongoDB", "Socket.io"],
     highlights: [
       "Email automation builder with drag-and-drop sequencing",
@@ -129,7 +129,7 @@ export const projects = [
     title: "SourceAI",
     subtitle: "AI-Powered Support System",
     description:
-      "Built an intelligent customer support system powered by OpenAI that automates 70-80% of customer queries. Features real-time chat with AI-to-human handoff and IMAP-based email-to-ticket conversion.",
+      "Customer support system where AI handles 70-80% of queries automatically. When it can't answer, it hands off to a human agent with full context. Also converts support emails into tickets via IMAP integration.",
     tech: ["Next.js", "OpenAI API", "Node.js", "Socket.io", "MongoDB"],
     highlights: [
       "AI chatbot automating 70-80% of customer queries",
@@ -143,7 +143,7 @@ export const projects = [
     title: "Ecommerce Store",
     subtitle: "Full Stack Shopping Platform",
     description:
-      "Built a complete ecommerce platform for buying and selling phones, laptops, and watches online. Features include product listings, cart management, user authentication, and a responsive shopping experience.",
+      "Full-stack ecommerce app — product listings, cart, checkout, JWT auth, admin panel. Built with the MERN stack. Clean UI with Tailwind, state managed with Redux Toolkit.",
     tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS", "Redux Toolkit"],
     highlights: [
       "Full CRUD with product management",
@@ -157,7 +157,7 @@ export const projects = [
     title: "Flora",
     subtitle: "Animated Flower Shop Website",
     description:
-      "A beautifully animated web application for selling cut flowers and ornamental plants. Built with scroll-triggered animations using GSAP for a premium, interactive browsing experience.",
+      "Animated flower shop website with scroll-triggered animations using GSAP and ScrollTrigger. Heavy focus on motion design and smooth interactions.",
     tech: ["HTML", "CSS", "JavaScript", "jQuery", "GSAP", "ScrollTrigger"],
     highlights: [
       "Smooth GSAP scroll-triggered animations",
