@@ -3,8 +3,6 @@
 import AnimatedSection from "./AnimatedSection";
 import { personalInfo } from "@/data/portfolio";
 import { Briefcase, Code, Zap, Users, Layout, Server, Cpu, Database } from "lucide-react";
-import { motion } from "framer-motion";
-
 const stats = [
   { label: "Years Experience", value: "2+", icon: Briefcase, color: "from-primary-500 to-primary-600" },
   { label: "Projects Shipped", value: "7+", icon: Code, color: "from-purple-500 to-violet-600" },
@@ -37,15 +35,11 @@ export default function About() {
         <AnimatedSection delay={0.1}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
             {stats.map((stat, i) => (
-              <motion.div
+              <div
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="group text-center p-6 bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/5 hover:-translate-y-1"
+                className="group text-center p-6 bg-white dark:bg-dark-800/80 md:md:dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-colors duration-200"
               >
-                <div className={`w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center text-white`}>
                   <stat.icon className="w-5 h-5" />
                 </div>
                 <div className="text-2xl md:text-3xl font-extrabold text-dark-900 dark:text-white mb-1">
@@ -54,14 +48,14 @@ export default function About() {
                 <div className="text-xs text-dark-500 dark:text-dark-400 font-medium">
                   {stat.label}
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </AnimatedSection>
 
         {/* About Content */}
-        <AnimatedSection delay={0.2}>
-          <div className="max-w-3xl mx-auto bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-8 md:p-10">
+        <AnimatedSection delay={0.08}>
+          <div className="max-w-3xl mx-auto bg-white dark:bg-dark-800/80 md:dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-8 md:p-10">
             <div className="space-y-5 text-dark-600 dark:text-dark-300 leading-relaxed">
               <p className="text-lg">
                 <strong className="text-dark-900 dark:text-white">Full Stack Developer</strong> based
@@ -86,14 +80,14 @@ export default function About() {
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/25 active:scale-95 text-sm"
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 py-3 rounded-xl font-semibold transition-colors duration-200 hover:shadow-lg hover:shadow-primary-500/25 active:scale-95 text-sm"
               >
                 Let&apos;s Connect
               </a>
               <a
                 href={personalInfo.resumeLink}
                 download="Gourav_Sahu_Resume.pdf"
-                className="inline-flex items-center justify-center gap-2 bg-dark-100 dark:bg-dark-700 text-dark-700 dark:text-dark-300 px-6 py-3 rounded-xl font-semibold hover:bg-dark-200 dark:hover:bg-dark-600 transition-all duration-300 active:scale-95 text-sm"
+                className="inline-flex items-center justify-center gap-2 bg-dark-100 dark:bg-dark-700 text-dark-700 dark:text-dark-300 px-6 py-3 rounded-xl font-semibold hover:bg-dark-200 dark:hover:bg-dark-600 transition-colors duration-200 active:scale-95 text-sm"
               >
                 Download CV
               </a>
@@ -102,7 +96,7 @@ export default function About() {
         </AnimatedSection>
 
         {/* What I Do */}
-        <AnimatedSection delay={0.3}>
+        <AnimatedSection delay={0.1}>
           <div className="mt-8 md:mt-10">
             <h3 className="text-xl md:text-2xl font-bold text-center mb-8">
               What I <span className="bg-gradient-to-r from-primary-500 to-primary-700 dark:from-primary-400 dark:to-primary-600 bg-clip-text text-transparent">Bring to the Table</span>
@@ -114,20 +108,16 @@ export default function About() {
                 { icon: Database, title: "Database", desc: "MongoDB + Redis + MySQL. Indexing, caching, aggregation pipelines.", color: "from-purple-500 to-violet-600" },
                 { icon: Cpu, title: "System Design", desc: "Redis queues, worker processes, Socket.io, event-driven patterns.", color: "from-orange-500 to-red-500" },
               ].map((item, i) => (
-                <motion.div
+                <div
                   key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="group p-5 bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/5 hover:-translate-y-1 text-center"
+                  className="group p-5 bg-white dark:bg-dark-800/80 md:md:dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-colors duration-200 text-center"
                 >
-                  <div className={`w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center text-white`}>
                     <item.icon className="w-5 h-5" />
                   </div>
                   <h4 className="font-bold text-dark-900 dark:text-white text-sm mb-1.5">{item.title}</h4>
                   <p className="text-xs text-dark-500 dark:text-dark-400 leading-relaxed">{item.desc}</p>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>

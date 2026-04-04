@@ -31,7 +31,7 @@ export default function Projects() {
         <div className="space-y-5 mb-5">
           {projects.slice(0, 3).map((project, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
-              <div className="group relative bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 overflow-hidden hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-500 hover:shadow-2xl hover:shadow-primary-500/10 hover:-translate-y-1">
+              <div className="group relative bg-white dark:bg-dark-800/80 md:dark:md:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 overflow-hidden hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-colors duration-200">
                 <div className="grid md:grid-cols-5 gap-0">
                   {/* Left — Gradient */}
                   <div
@@ -52,7 +52,7 @@ export default function Projects() {
                           href={project.liveLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 mt-4 px-4 py-1.5 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full text-white text-xs font-semibold transition-colors"
+                          className="inline-flex items-center gap-1.5 mt-4 px-4 py-1.5 bg-white/20 hover:bg-white/30 md:backdrop-blur-sm rounded-full text-white text-xs font-semibold transition-colors"
                         >
                           <ExternalLink className="w-3 h-3" />
                           Live Demo
@@ -97,7 +97,7 @@ export default function Projects() {
         <div className="grid md:grid-cols-2 gap-5">
           {projects.slice(3).map((project, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
-              <div className="group bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 overflow-hidden hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/5 hover:-translate-y-1 h-full flex flex-col">
+              <div className="group bg-white dark:bg-dark-800/80 md:dark:md:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 overflow-hidden hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-colors duration-200 h-full flex flex-col">
                 {/* Gradient Header */}
                 <div className={`h-28 sm:h-32 bg-gradient-to-br ${project.color} relative overflow-hidden flex items-center justify-center`}>
                   <div className="absolute inset-0 bg-black/10" />

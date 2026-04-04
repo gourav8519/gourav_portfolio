@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "Full Stack Developer (MERN Stack)",
   tagline: "Building Scalable & High-Performance Web Applications",
   description:
-    "2+ years into building SaaS products that actually handle scale - WhatsApp automation doing 1L+ workflows/day, email systems pushing 1M+ emails/day. I work across the full stack with React, Next.js, Node.js, and MongoDB. Not just writing code - designing systems that don't break under pressure.",
+    "2+ years into building SaaS products that actually handle scale - WhatsApp automation doing 3L+ workflows/day, email systems pushing 1M+ emails/day. I work across the full stack with React, Next.js, Node.js, and MongoDB. Not just writing code - designing systems that don't break under pressure.",
   email: "s001gourav@gmail.com",
   phone: "+91 8519006622",
   location: "Bhopal, India",
@@ -75,7 +75,7 @@ export const experiences = [
     period: "May 2025 – Present",
     current: true,
     highlights: [
-      "Built a WhatsApp automation platform using React Flow with 20+ automation node types, handling 1L+ daily workflow executions",
+      "Built a WhatsApp automation platform using React Flow with 20+ automation node types, handling 3L+ daily workflow executions",
       "Designed event-driven architecture using Redis queues and worker processes, improving scalability by 40%",
       "Integrated WhatsApp APIs with real-time tracking via Socket.io, reducing manual monitoring by 60%",
       "Developed scalable email automation for 50K+ users with bulk delivery (1M+ emails/day) using Redis, SMTP & PMTA",
@@ -115,7 +115,7 @@ export const projects = [
     title: "Pabbly ChatFlow",
     subtitle: "WhatsApp Automation Platform",
     description:
-      "Users drag and drop nodes to create WhatsApp automation flows - conditions, delays, webhooks, API calls. I built both the React Flow frontend and the Redis-powered backend engine. Running 1L+ workflow executions daily with 20+ node types.",
+      "Users drag and drop nodes to create WhatsApp automation flows - conditions, delays, webhooks, API calls. I built both the React Flow frontend and the Redis-powered backend engine. Running 3L+ workflow executions daily with 20+ node types.",
     tech: ["React.js", "React Flow", "Node.js", "Redis", "Socket.io", "MongoDB"],
     highlights: [
       "Visual workflow builder with 20+ automation node types",

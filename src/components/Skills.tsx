@@ -2,19 +2,14 @@
 
 import { skills } from "@/data/portfolio";
 import AnimatedSection from "./AnimatedSection";
-import { motion } from "framer-motion";
 
-function SkillTag({ name, delay, hoverColor }: { name: string; delay: number; hoverColor: string }) {
+function SkillTag({ name, hoverColor }: { name: string; hoverColor: string }) {
   return (
-    <motion.span
-      initial={{ opacity: 0, scale: 0.8 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true }}
-      transition={{ delay }}
-      className={`px-3.5 py-2 bg-white dark:bg-dark-800 text-dark-700 dark:text-dark-300 rounded-xl text-sm font-semibold border border-dark-200 dark:border-dark-700 ${hoverColor} transition-all duration-300 cursor-default shadow-sm`}
+    <span
+      className={`px-3.5 py-2 bg-white dark:bg-dark-800 text-dark-700 dark:text-dark-300 rounded-xl text-sm font-semibold border border-dark-200 dark:border-dark-700 ${hoverColor} transition-colors duration-200 cursor-default shadow-sm`}
     >
       {name}
-    </motion.span>
+    </span>
   );
 }
 
@@ -42,8 +37,8 @@ export default function Skills() {
         {/* 2x2 grid on desktop, single column on mobile */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           {/* Frontend */}
-          <AnimatedSection delay={0.1}>
-            <div className="bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-5 md:p-7 h-full">
+          <AnimatedSection delay={0.05}>
+            <div className="bg-white dark:bg-dark-800/80 md:dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-5 md:p-7 h-full">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center">
                   <span className="text-white text-sm md:text-lg font-bold">F</span>
@@ -52,15 +47,15 @@ export default function Skills() {
               </div>
               <div className="flex flex-wrap gap-2">
                 {skills.frontend.map((skill, i) => (
-                  <SkillTag key={skill} name={skill} delay={i * 0.03} hoverColor="hover:border-primary-500/50 hover:text-primary-600 dark:hover:text-primary-400" />
+                  <SkillTag key={skill} name={skill} hoverColor="hover:border-primary-500/50 hover:text-primary-600 dark:hover:text-primary-400" />
                 ))}
               </div>
             </div>
           </AnimatedSection>
 
           {/* Backend */}
-          <AnimatedSection delay={0.15}>
-            <div className="bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-5 md:p-7 h-full">
+          <AnimatedSection delay={0.08}>
+            <div className="bg-white dark:bg-dark-800/80 md:dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-5 md:p-7 h-full">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
                   <span className="text-white text-sm md:text-lg font-bold">B</span>
@@ -69,15 +64,15 @@ export default function Skills() {
               </div>
               <div className="flex flex-wrap gap-2">
                 {skills.backend.map((skill, i) => (
-                  <SkillTag key={skill} name={skill} delay={i * 0.03} hoverColor="hover:border-green-500/50 hover:text-green-600 dark:hover:text-green-400" />
+                  <SkillTag key={skill} name={skill} hoverColor="hover:border-green-500/50 hover:text-green-600 dark:hover:text-green-400" />
                 ))}
               </div>
             </div>
           </AnimatedSection>
 
           {/* Tools */}
-          <AnimatedSection delay={0.2}>
-            <div className="bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-5 md:p-7 h-full">
+          <AnimatedSection delay={0.05}>
+            <div className="bg-white dark:bg-dark-800/80 md:dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-5 md:p-7 h-full">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center">
                   <span className="text-white text-sm md:text-lg font-bold">T</span>
@@ -86,15 +81,15 @@ export default function Skills() {
               </div>
               <div className="flex flex-wrap gap-2">
                 {skills.tools.map((tool, i) => (
-                  <SkillTag key={tool} name={tool} delay={i * 0.03} hoverColor="hover:border-purple-500/50 hover:text-purple-600 dark:hover:text-purple-400" />
+                  <SkillTag key={tool} name={tool} hoverColor="hover:border-purple-500/50 hover:text-purple-600 dark:hover:text-purple-400" />
                 ))}
               </div>
             </div>
           </AnimatedSection>
 
           {/* Core Concepts */}
-          <AnimatedSection delay={0.25}>
-            <div className="bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-5 md:p-7 h-full">
+          <AnimatedSection delay={0.08}>
+            <div className="bg-white dark:bg-dark-800/80 md:dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-5 md:p-7 h-full">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
                   <span className="text-white text-sm md:text-lg font-bold">C</span>
@@ -103,7 +98,7 @@ export default function Skills() {
               </div>
               <div className="flex flex-wrap gap-2">
                 {skills.highlights.map((item, i) => (
-                  <SkillTag key={item} name={item} delay={i * 0.03} hoverColor="hover:border-orange-500/50 hover:text-orange-600 dark:hover:text-orange-400" />
+                  <SkillTag key={item} name={item} hoverColor="hover:border-orange-500/50 hover:text-orange-600 dark:hover:text-orange-400" />
                 ))}
               </div>
             </div>

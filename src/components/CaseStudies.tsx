@@ -3,7 +3,6 @@
 import AnimatedSection from "./AnimatedSection";
 import { Target, Wrench, Layers, Zap, TrendingUp, BookOpen, ChevronDown } from "lucide-react";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 
 const caseStudies = [
   {
@@ -11,9 +10,9 @@ const caseStudies = [
     title: "Pabbly ChatFlow",
     subtitle: "WhatsApp Automation Platform",
     color: "from-green-500 to-emerald-600",
-    summary: "Visual workflow builder handling 1L+ daily executions with 20+ automation node types",
+    summary: "Visual workflow builder handling 3L+ daily executions with 20+ automation node types",
     metrics: [
-      { label: "Daily Executions", value: "1L+" },
+      { label: "Daily Executions", value: "3L+" },
       { label: "Scalability Boost", value: "40%" },
       { label: "Users", value: "50K+" },
       { label: "Node Types", value: "20+" },
@@ -132,8 +131,8 @@ function CaseStudyCard({ cs, index }: { cs: typeof caseStudies[0]; index: number
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <AnimatedSection delay={index * 0.1}>
-      <div className="bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 overflow-hidden hover:border-primary-500/30 transition-all duration-300">
+    <AnimatedSection delay={index * 0.05}>
+      <div className="bg-white dark:bg-dark-800/80 md:dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 overflow-hidden hover:border-primary-500/30 transition-colors duration-200">
         {/* Clickable Header */}
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -146,13 +145,12 @@ function CaseStudyCard({ cs, index }: { cs: typeof caseStudies[0]; index: number
                 <h3 className="text-xl md:text-2xl font-bold text-white">{cs.title}</h3>
                 <p className="text-white/80 text-sm font-medium mt-0.5">{cs.subtitle}</p>
               </div>
-              <motion.div
-                animate={{ rotate: isOpen ? 180 : 0 }}
-                transition={{ duration: 0.3 }}
-                className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0 ml-4"
+              <div
+                className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center shrink-0 ml-4 transition-transform duration-200"
+                style={{ transform: isOpen ? "rotate(180deg)" : "rotate(0deg)" }}
               >
                 <ChevronDown className="w-5 h-5 text-white" />
-              </motion.div>
+              </div>
             </div>
           </div>
 
@@ -171,15 +169,12 @@ function CaseStudyCard({ cs, index }: { cs: typeof caseStudies[0]; index: number
         </button>
 
         {/* Expandable Content */}
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="overflow-hidden"
-            >
+        <div
+          className="grid transition-[grid-template-rows] duration-300 ease-out"
+          style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
+        >
+          <div className="overflow-hidden">
+            {isOpen && (
               <div className="px-5 md:px-6 pb-6 space-y-6 border-t border-dark-200/50 dark:border-dark-700/30 pt-6">
                 {/* Problem & Solution */}
                 <div className="grid md:grid-cols-2 gap-5">
@@ -275,9 +270,9 @@ function CaseStudyCard({ cs, index }: { cs: typeof caseStudies[0]; index: number
                   </div>
                 </div>
               </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+            )}
+          </div>
+        </div>
       </div>
     </AnimatedSection>
   );

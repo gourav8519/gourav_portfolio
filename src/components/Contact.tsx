@@ -81,9 +81,9 @@ export default function Contact() {
             {/* Contact Cards */}
             <a
               href={`mailto:${personalInfo.email}`}
-              className="group flex items-center gap-4 p-5 bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 hover:border-primary-500/50 dark:hover:border-primary-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/5 hover:-translate-y-0.5"
+              className="group flex items-center gap-4 p-5 bg-white dark:bg-dark-800/80 md:dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 hover:border-primary-500/50 dark:hover:border-primary-500/30 transition-colors duration-200"
             >
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center text-white shrink-0 ">
                 <Mail className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
@@ -97,9 +97,9 @@ export default function Contact() {
 
             <a
               href={`tel:${personalInfo.phone}`}
-              className="group flex items-center gap-4 p-5 bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 hover:border-primary-500/50 dark:hover:border-primary-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary-500/5 hover:-translate-y-0.5"
+              className="group flex items-center gap-4 p-5 bg-white dark:bg-dark-800/80 md:dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 hover:border-primary-500/50 dark:hover:border-primary-500/30 transition-colors duration-200"
             >
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center text-white shrink-0 ">
                 <Phone className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
@@ -111,7 +111,7 @@ export default function Contact() {
               <ArrowUpRight className="w-4 h-4 text-dark-300 dark:text-dark-600 group-hover:text-green-500 shrink-0 transition-colors" />
             </a>
 
-            <div className="flex items-center gap-4 p-5 bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50">
+            <div className="flex items-center gap-4 p-5 bg-white dark:bg-dark-800/80 md:dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center text-white shrink-0">
                 <MapPin className="w-5 h-5" />
               </div>
@@ -173,7 +173,7 @@ export default function Contact() {
           <AnimatedSection delay={0.2}>
             <form
               onSubmit={handleSubmit}
-              className="bg-white dark:bg-dark-800/80 dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-6 md:p-8 space-y-5 h-full flex flex-col"
+              className="bg-white dark:bg-dark-800/80 md:dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-6 md:p-8 space-y-5 h-full flex flex-col"
             >
               <div>
                 <h3 className="text-xl font-bold text-dark-900 dark:text-white mb-1">Send me a message</h3>
@@ -226,7 +226,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 disabled:opacity-70 text-white px-6 py-4 rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/25 active:scale-[0.98] text-sm"
+                className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 disabled:opacity-70 text-white px-6 py-4 rounded-xl font-semibold transition-colors duration-200 active:scale-[0.98] text-sm"
               >
                 {status === "sending" ? (
                   <>Sending...</>
