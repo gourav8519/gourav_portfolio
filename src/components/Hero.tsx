@@ -37,7 +37,7 @@ export default function Hero() {
           <span className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-dark-100/80 dark:bg-dark-800/80">
             <span className="w-1.5 h-1.5 rounded-full bg-primary-500 hidden sm:block" />
             <span className="text-sm sm:text-lg md:text-xl font-medium text-dark-600 dark:text-dark-300">
-              Full Stack Developer &bull; MERN Stack
+              Full Stack Engineer &bull; Building for Scale
             </span>
             <span className="w-1.5 h-1.5 rounded-full bg-primary-500 hidden sm:block" />
           </span>
@@ -45,10 +45,9 @@ export default function Hero() {
 
         {/* Description */}
         <p className="text-[13px] sm:text-base md:text-lg text-dark-500 dark:text-dark-400 max-w-2xl mx-auto mb-6 sm:mb-8 leading-[1.8] px-2 sm:px-0">
-          I ship <strong className="text-dark-700 dark:text-dark-200">production SaaS products</strong> -{" "}
-          from <strong className="text-dark-700 dark:text-dark-200">WhatsApp automation platforms</strong> to{" "}
-          <strong className="text-dark-700 dark:text-dark-200">high-volume email systems</strong>.{" "}
-          React + Node + Redis + MongoDB. Built for scale, not just demos.
+          I build <strong className="text-dark-700 dark:text-dark-200">SaaS systems that handle 1M+ daily operations</strong> -{" "}
+          WhatsApp automation, bulk email pipelines, real-time platforms.{" "}
+          React + Node + Redis + MongoDB, running in production.
         </p>
 
         {/* Tech Stack Pills */}

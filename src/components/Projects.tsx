@@ -93,6 +93,19 @@ export default function Projects() {
           ))}
         </div>
 
+        {/* Side Projects heading */}
+        <AnimatedSection delay={0.05}>
+          <div className="mt-12 md:mt-16 mb-6 md:mb-8">
+            <div className="flex items-center gap-4">
+              <div className="h-px flex-1 bg-dark-200 dark:bg-dark-700" />
+              <h3 className="text-sm md:text-base font-semibold text-dark-500 dark:text-dark-400 uppercase tracking-wider">
+                Side Projects
+              </h3>
+              <div className="h-px flex-1 bg-dark-200 dark:bg-dark-700" />
+            </div>
+          </div>
+        </AnimatedSection>
+
         {/* Bottom 2 — Grid Cards */}
         <div className="grid md:grid-cols-2 gap-5">
           {projects.slice(3).map((project, i) => (

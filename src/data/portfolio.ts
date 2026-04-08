@@ -17,11 +17,9 @@ export const skills = {
     "React.js",
     "Next.js",
     "TypeScript",
-    "JavaScript (ES6+)",
     "Tailwind CSS",
     "Redux Toolkit",
     "React Flow",
-    "HTML5 / CSS3",
   ],
   backend: [
     "Node.js",
@@ -30,40 +28,20 @@ export const skills = {
     "MongoDB",
     "Redis",
     "Socket.io",
-    "REST APIs",
-    "MySQL",
   ],
   tools: [
     "Git & GitHub",
     "AWS (EC2, S3)",
     "Docker",
-    "Cloudflare",
     "Postman",
-    "VS Code",
-    "Jira",
-    "Figma",
-    "Webpack / Vite",
-    "Jest",
-    "PM2",
     "Vercel",
   ],
   highlights: [
     "System Design",
-    "Data Structures & Algorithms",
-    "OOPs Concepts",
-    "DBMS & Database Design",
-    "Operating Systems",
     "Event-Driven Architecture",
-    "Real-Time Systems (Socket.io)",
     "Queue Workers (BullMQ / Redis)",
-    "JWT Authentication & RBAC",
+    "Real-Time Systems",
     "Performance Optimization",
-    "OWASP Security Standards",
-    "Agile / Scrum Methodology",
-    "CI/CD & DevOps Basics",
-    "Database Indexing & Optimization",
-    "REST API Design & Versioning",
-    "Microservices (Basics)",
   ],
 };
 
@@ -140,20 +118,6 @@ export const projects = [
     liveLink: "",
   },
   {
-    title: "Ecommerce Store",
-    subtitle: "Full Stack Shopping Platform",
-    description:
-      "Full-stack ecommerce app - product listings, cart, checkout, JWT auth, admin panel. Built with the MERN stack. Clean UI with Tailwind, state managed with Redux Toolkit.",
-    tech: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS", "Redux Toolkit"],
-    highlights: [
-      "Full CRUD with product management",
-      "JWT authentication & cart system",
-      "Responsive UI with Tailwind CSS",
-    ],
-    color: "from-orange-400 to-red-500",
-    liveLink: "",
-  },
-  {
     title: "Flora",
     subtitle: "Animated Flower Shop Website",
     description:
@@ -178,8 +142,6 @@ export const education = {
 
 export const certifications = [
   { name: "UX Design Foundations", provider: "Coursera", year: "2023" },
-  { name: "Building RESTful APIs with Node.js and Express", provider: "Coursera", year: "2021" },
-  { name: "Git + GitHub for Open Source Collaboration", provider: "Coursera", year: "2020" },
 ];
 
 export const navLinks = [

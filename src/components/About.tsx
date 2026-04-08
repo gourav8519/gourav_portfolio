@@ -2,10 +2,9 @@
 
 import AnimatedSection from "./AnimatedSection";
 import { personalInfo } from "@/data/portfolio";
-import { Briefcase, Code, Zap, Users, Layout, Server, Cpu, Database } from "lucide-react";
+import { Briefcase, Zap, Users, Layout, Server, Cpu, Database, Cloud, GitBranch, BookOpen } from "lucide-react";
 const stats = [
   { label: "Years Experience", value: "2+", icon: Briefcase, color: "from-primary-500 to-primary-600" },
-  { label: "Projects Shipped", value: "7+", icon: Code, color: "from-purple-500 to-violet-600" },
   { label: "Users Served", value: "50K+", icon: Users, color: "from-green-500 to-emerald-600" },
   { label: "Emails/Day", value: "1M+", icon: Zap, color: "from-orange-500 to-red-500" },
 ];
@@ -33,7 +32,7 @@ export default function About() {
 
         {/* Stats Row */}
         <AnimatedSection delay={0.1}>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
+          <div className="grid grid-cols-3 gap-3 md:gap-4 mb-14 max-w-3xl mx-auto">
             {stats.map((stat, i) => (
               <div
                 key={i}
@@ -119,6 +118,46 @@ export default function About() {
                   <p className="text-xs text-dark-500 dark:text-dark-400 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </AnimatedSection>
+
+        {/* Currently Learning */}
+        <AnimatedSection delay={0.12}>
+          <div className="mt-8 md:mt-10 max-w-3xl mx-auto">
+            <div className="bg-white dark:bg-dark-800/80 md:dark:backdrop-blur-sm rounded-2xl border border-dark-200/60 dark:border-dark-600/50 p-6 md:p-8">
+              <div className="flex items-center gap-2 mb-5">
+                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center text-white">
+                  <BookOpen className="w-4 h-4" />
+                </div>
+                <h3 className="text-lg md:text-xl font-bold text-dark-900 dark:text-white">
+                  Currently Learning
+                </h3>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                {[
+                  { icon: Cloud, title: "AWS", desc: "EC2, S3, Lambda, deeper cloud architecture" },
+                  { icon: Cpu, title: "System Design", desc: "Distributed systems, scalability patterns" },
+                  { icon: GitBranch, title: "DSA", desc: "Problem solving, algorithmic thinking" },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex items-start gap-3 p-3 rounded-xl border border-dark-200/60 dark:border-dark-600/50 hover:border-primary-500/40 dark:hover:border-primary-500/20 transition-colors duration-200"
+                  >
+                    <div className="w-8 h-8 rounded-lg bg-primary-50 dark:bg-primary-500/10 flex items-center justify-center text-primary-600 dark:text-primary-400 flex-shrink-0">
+                      <item.icon className="w-4 h-4" />
+                    </div>
+                    <div className="min-w-0">
+                      <div className="font-semibold text-sm text-dark-900 dark:text-white mb-0.5">
+                        {item.title}
+                      </div>
+                      <div className="text-xs text-dark-500 dark:text-dark-400 leading-relaxed">
+                        {item.desc}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </AnimatedSection>
