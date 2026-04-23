@@ -10,9 +10,9 @@ const caseStudies = [
     title: "Pabbly ChatFlow",
     subtitle: "WhatsApp Automation Platform",
     color: "from-green-500 to-emerald-600",
-    summary: "Visual workflow builder handling 3L+ daily executions with 20+ automation node types",
+    summary: "Visual workflow builder handling 1L+ daily executions with 20+ automation node types",
     metrics: [
-      { label: "Daily Executions", value: "3L+" },
+      { label: "Daily Executions", value: "1L+" },
       { label: "Scalability Boost", value: "40%" },
       { label: "Users", value: "50K+" },
       { label: "Node Types", value: "20+" },

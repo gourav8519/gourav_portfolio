@@ -106,7 +106,7 @@ export default async function Image() {
             margin: "0 0 20px 0",
           }}
         >
-          Full Stack Developer • MERN Stack
+          Full Stack Software Engineer
         </p>
 
         {/* Description */}

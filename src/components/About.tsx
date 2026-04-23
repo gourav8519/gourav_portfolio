@@ -4,7 +4,7 @@ import AnimatedSection from "./AnimatedSection";
 import { personalInfo } from "@/data/portfolio";
 import { Briefcase, Zap, Users, Layout, Server, Cpu, Database, Cloud, GitBranch, BookOpen } from "lucide-react";
 const stats = [
-  { label: "Years Experience", value: "2+", icon: Briefcase, color: "from-primary-500 to-primary-600" },
+  { label: "Years Experience", value: "3+", icon: Briefcase, color: "from-primary-500 to-primary-600" },
   { label: "Users Served", value: "50K+", icon: Users, color: "from-green-500 to-emerald-600" },
   { label: "Emails/Day", value: "1M+", icon: Zap, color: "from-orange-500 to-red-500" },
 ];
@@ -63,14 +63,14 @@ export default function About() {
 
               <p>
                 Right now at <strong className="text-dark-900 dark:text-white">Pabbly</strong>, I own two major products end-to-end:{" "}
-                <strong className="text-dark-900 dark:text-white">WhatsApp ChatFlow</strong> - a visual workflow builder doing 5,000+ executions daily,
+                <strong className="text-dark-900 dark:text-white">WhatsApp ChatFlow</strong> - a visual workflow builder doing 1L+ executions daily,
                 and <strong className="text-dark-900 dark:text-white">Email Marketing</strong> - a bulk sending system pushing 1M+ emails/day through Redis queues and PMTA servers.
               </p>
 
               <p>
                 My day-to-day involves <strong className="text-dark-900 dark:text-white">React, Node.js, MongoDB, Redis, Socket.io</strong> -
                 designing queue architectures, writing API endpoints, building drag-and-drop UIs, and debugging production issues at scale.
-                Before Pabbly, I was at <strong className="text-dark-900 dark:text-white">iifetech</strong> building dashboards and REST APIs.
+                Before Pabbly, I was at <strong className="text-dark-900 dark:text-white">iifetech</strong> building dashboards and REST APIs, and started my journey at <strong className="text-dark-900 dark:text-white">Extempore Software Solutions</strong> where I shipped my first production web apps.
               </p>
             </div>
 

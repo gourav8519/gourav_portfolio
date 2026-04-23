@@ -151,7 +151,7 @@ export default function Contact() {
               <ul className="space-y-2.5 text-sm text-white/90">
                 <li className="flex gap-2.5">
                   <CheckCircle className="w-4 h-4 mt-0.5 shrink-0" />
-                  <span>2+ years building production-grade SaaS products</span>
+                  <span>3+ years building production-grade SaaS products</span>
                 </li>
                 <li className="flex gap-2.5">
                   <CheckCircle className="w-4 h-4 mt-0.5 shrink-0" />

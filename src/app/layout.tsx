@@ -18,19 +18,22 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Gourav Sahu | MERN Stack Developer",
+  title: "Gourav Sahu | Full Stack Software Engineer",
   description:
-    "MERN Stack Developer with 2+ years of experience building scalable SaaS applications using React.js, Next.js, Node.js, and MongoDB. Skilled in automation systems, real-time platforms, and high-performance APIs.",
+    "Full Stack Software Engineer with 3+ years of experience architecting and shipping production-grade SaaS applications using React.js, Next.js, Node.js, TypeScript, and MongoDB. Skilled in event-driven systems, real-time platforms, and high-performance APIs.",
   keywords: [
     "Gourav Sahu",
-    "MERN Stack Developer",
+    "Full Stack Software Engineer",
     "Full Stack Developer",
+    "MERN Stack Developer",
     "React.js",
     "Next.js",
     "Node.js",
     "MongoDB",
     "TypeScript",
     "System Design",
+    "Event-Driven Architecture",
+    "Microservices",
     "Portfolio",
     "Web Developer",
     "Bhopal",
@@ -50,9 +53,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Gourav Sahu | MERN Stack Developer",
+    title: "Gourav Sahu | Full Stack Software Engineer",
     description:
-      "Full Stack MERN Developer building scalable SaaS products, automation platforms, and real-time systems. 2+ years experience.",
+      "Full Stack Software Engineer building scalable SaaS products, automation platforms, and real-time systems. 3+ years experience.",
     type: "website",
     siteName: "Gourav Sahu Portfolio",
     url: siteUrl,
@@ -60,9 +63,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gourav Sahu | MERN Stack Developer",
+    title: "Gourav Sahu | Full Stack Software Engineer",
     description:
-      "Full Stack MERN Developer building scalable SaaS products, automation platforms, and real-time systems. 2+ years experience.",
+      "Full Stack Software Engineer building scalable SaaS products, automation platforms, and real-time systems. 3+ years experience.",
   },
 };
 
