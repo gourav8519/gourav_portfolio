@@ -77,7 +77,7 @@ export default async function Image() {
               fontWeight: 500,
             }}
           >
-            gouravsahu.dev
+            gouravsahu.com
           </span>
         </div>
 

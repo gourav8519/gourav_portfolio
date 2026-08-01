@@ -47,18 +47,23 @@ export default function Navbar() {
           {/* Logo */}
           <a
             href="#home"
-            className="text-lg sm:text-xl font-bold bg-gradient-to-r from-primary-500 to-primary-700 dark:from-primary-400 dark:to-primary-600 bg-clip-text text-transparent shrink-0"
+            className="flex items-center gap-2 shrink-0"
           >
-            {`<${personalInfo.name.split(" ")[0]} />`}
+            <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center text-white text-sm font-extrabold shrink-0">
+              {personalInfo.name.charAt(0)}
+            </span>
+            <span className="text-lg sm:text-xl font-bold bg-gradient-to-r from-primary-500 to-primary-700 dark:from-primary-400 dark:to-primary-600 bg-clip-text text-transparent whitespace-nowrap">
+              {personalInfo.name.split(" ")[0]}
+            </span>
           </a>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-0.5 lg:gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                className={`px-2 lg:px-3 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-all duration-300 ${
                   activeSection === link.href.replace("#", "")
                     ? "text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-500/10"
                     : "text-dark-600 dark:text-dark-400 hover:text-dark-900 dark:hover:text-dark-100 hover:bg-dark-100 dark:hover:bg-dark-800"

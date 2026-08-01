@@ -62,15 +62,14 @@ export default function About() {
               </p>
 
               <p>
-                Right now at <strong className="text-dark-900 dark:text-white">Pabbly</strong>, I own two major products end-to-end:{" "}
-                <strong className="text-dark-900 dark:text-white">WhatsApp ChatFlow</strong> - a visual workflow builder doing 1L+ executions daily,
-                and <strong className="text-dark-900 dark:text-white">Email Marketing</strong> - a bulk sending system pushing 1M+ emails/day through Redis queues and PMTA servers.
+                Right now at <strong className="text-dark-900 dark:text-white">CreditQ</strong>, I&apos;m building a{" "}
+                <strong className="text-dark-900 dark:text-white">multi-tenant marketing automation platform</strong> spanning Email, SMS, IVR, and WhatsApp campaigns - designing REST APIs for campaign management, audience segmentation, and execution reporting, and integrating third-party IVR APIs for retry workflows.
               </p>
 
               <p>
-                My day-to-day involves <strong className="text-dark-900 dark:text-white">React, Node.js, MongoDB, Redis, Socket.io</strong> -
-                designing queue architectures, writing API endpoints, building drag-and-drop UIs, and debugging production issues at scale.
-                Before Pabbly, I was at <strong className="text-dark-900 dark:text-white">iifetech</strong> building dashboards and REST APIs, and started my journey at <strong className="text-dark-900 dark:text-white">Extempore Software Solutions</strong> where I shipped my first production web apps.
+                My day-to-day involves <strong className="text-dark-900 dark:text-white">Node.js, TypeScript, MongoDB, MySQL, Redis, AWS SQS</strong> -
+                architecting queue-based pipelines, building React + Redux Toolkit dashboards, and optimizing backend performance through caching and query tuning.
+                Before this, I spent a year at <strong className="text-dark-900 dark:text-white">Pabbly</strong>, where I owned a WhatsApp automation platform handling 1L+ daily workflow executions and a bulk email system pushing 1M+ emails/day. I started at <strong className="text-dark-900 dark:text-white">iifetech</strong> building dashboards and REST APIs, and began my journey at <strong className="text-dark-900 dark:text-white">Extempore Software Solutions</strong> where I shipped my first production web apps.
               </p>
             </div>
 
