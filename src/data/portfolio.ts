@@ -65,7 +65,7 @@ export const experiences = [
   {
     title: "Software Developer",
     company: "Business Alert Infotech Pvt. Ltd. (CreditQ)",
-    location: "Bhopal, India",
+    location: "Jaipur, India",
     period: "May 2026 – Present",
     current: true,
     highlights: [
