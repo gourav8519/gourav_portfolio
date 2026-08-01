@@ -63,11 +63,25 @@ export const skills = {
 
 export const experiences = [
   {
+    title: "Software Developer",
+    company: "Business Alert Infotech Pvt. Ltd. (CreditQ)",
+    location: "Bhopal, India",
+    period: "May 2026 – Present",
+    current: true,
+    highlights: [
+      "Engineering a multi-tenant marketing automation platform orchestrating Email, SMS, IVR, and WhatsApp campaigns across client accounts",
+      "Architecting backend services in Node.js, TypeScript, and Express.js backed by MongoDB, MySQL, Redis, and AWS SQS, and designing REST APIs for campaign management, audience segmentation, execution reporting, and contact suppression",
+      "Integrating third-party HoduBlast APIs for IVR campaign execution, blacklist synchronization, and automated retry workflows",
+      "Building asynchronous, queue-based pipelines for campaign execution and large-scale CSV exports, and improving backend performance through Redis caching, optimized SQL queries, and background workers",
+      "Developing React.js + Redux Toolkit dashboards for campaign management and reporting, while driving production issue resolution across a distributed multi-tenant architecture",
+    ],
+  },
+  {
     title: "Associate Software Developer (Full Stack)",
     company: "Pabbly",
     location: "Bhopal, India",
-    period: "May 2025 – Present",
-    current: true,
+    period: "May 2025 – Apr 2026",
+    current: false,
     highlights: [
       "Owned end-to-end delivery of a WhatsApp automation platform handling 1L+ daily workflow executions, built with React Flow supporting conditions, delays, and webhook triggers",
       "Architected an event-driven execution engine with Redis queues, BullMQ, and worker processes, achieving 99.9% uptime and horizontal scalability",
@@ -105,6 +119,21 @@ export const experiences = [
 ];
 
 export const projects = [
+  {
+    title: "CreditQ Campaign Automation Platform",
+    subtitle: "Multi-Tenant Marketing Automation",
+    description:
+      "Multi-tenant marketing automation platform supporting Email, SMS, IVR, and WhatsApp campaigns - covering campaign management, audience segmentation, execution reporting, and contact suppression, with HoduBlast IVR integration and async queue-based processing.",
+    tech: ["Node.js", "TypeScript", "Express.js", "React.js", "Redux Toolkit", "MongoDB", "MySQL", "Redis", "AWS SQS", "Docker", "GraphQL"],
+    highlights: [
+      "Async queue-based campaign execution and CSV exports",
+      "HoduBlast IVR integration with blacklist sync and automated retries",
+      "Redis caching and optimized SQL for high-throughput reporting",
+      "React + Redux Toolkit dashboards for real-time campaign management",
+    ],
+    color: "from-orange-400 to-amber-600",
+    liveLink: "",
+  },
   {
     title: "Pabbly Email Marketing",
     subtitle: "Bulk Email & Automation System",
